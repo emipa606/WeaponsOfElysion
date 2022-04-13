@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>WeaponsOfElysion</name>
+  <author>MercuryDoll and Yaluzan</author>
+  <description>Weapons Of Elysion is a mod that started on the unofficial rimworld discord that Mercury started and was making art for.
+I (Yaluzan) took this chance to start modding rimworld, this is the first rimworld mod i did XML and programming.
+
+This mod contains 2 new weapons.
+The first gun is a Voltaic Hand-Cannon which functions as a Lightning Shotgun(proper shotgun pellets, not a single blast) which will burn anything it hits. Since it is lightning it will also function as an EMP weapon but it is a lot less strong than an EMP grenade or EMP mortar.
+
+The second gun is a High Explosive Combat Rifle, As you can read from the name, its a rifle with bullets that explode upon impact. Its a small but strong explosion which might be lethal, even on the first hit. But this stopping power causes it to have bad accuracy and a long warmup/cooldown.
+
+Credits:
+
+Textures and Idea: MercuryDoll
+Programming: Yaluzan
+
+Rimworld Unofficial Discord(as linked on reddit): https://discordapp.com/invite/UTaMDWc
+You can come here for anything, asking questions, troubleshooting, just random talking and showing off your base. There is a seperate modding channel you can always hop into if you want to get into modding or just have questions about a certain mod(chances are high the creator is in the discord).</description>
+  <targetVersion>0.16.1393</targetVersion>
+</ModMetaData>
