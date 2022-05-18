@@ -10,7 +10,7 @@
       <speed>300</speed>
     </projectile>
     <graphicData>
-      <texPath>Things/Projectile/Bullet_big</texPath>
+      <texPath>VoltaicShot</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
   </ThingDef>
@@ -45,7 +45,7 @@
         <range>16</range>
         <ticksBetweenBurstShots>0</ticksBetweenBurstShots>
         <burstShotCount>8</burstShotCount>
-        <soundCast>Shot_BoltActionRifle</soundCast>
+        <soundCast>Shot_Voltaic</soundCast>
         <soundCastTail>GunTail_Heavy</soundCastTail>
         <muzzleFlashScale>9</muzzleFlashScale>
       </li>

@@ -1,4 +1,7 @@
 # Changelog for WeaponsOfElysion
 
+1.3.1 - Custom sound and bullet graphics added, thank you Zaljerem!
+
+
 1.3.0 - First publish
 
