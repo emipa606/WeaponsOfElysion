@@ -6,10 +6,10 @@ namespace WeaponsOfElysion;
 
 public class LightningBullet : Projectile
 {
-    protected override void Impact(Thing hitThing)
+    protected override void Impact(Thing hitThing, bool blockedByShield = false)
     {
         var map = Map;
-        base.Impact(hitThing);
+        base.Impact(hitThing, blockedByShield);
         if (hitThing != null)
         {
             var damageAmountBase = def.projectile.GetDamageAmount(launcher);

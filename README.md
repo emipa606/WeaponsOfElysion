@@ -5,6 +5,8 @@
 Update of MercuryDoll and Yaluzans mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=859203658
 
+- Custom sound and bullet graphics added, thank you Zaljerem!
+
 ![Image](https://i.imgur.com/pufA0kM.png)
 
 	

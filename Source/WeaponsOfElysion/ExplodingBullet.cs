@@ -6,10 +6,10 @@ namespace WeaponsOfElysion;
 
 public class ExplodingBullet : Projectile
 {
-    protected override void Impact(Thing hitThing)
+    protected override void Impact(Thing hitThing, bool blockedByShield = false)
     {
         var map = Map;
-        base.Impact(hitThing);
+        base.Impact(hitThing, blockedByShield);
         var damageAmountBase = def.projectile.GetDamageAmount(launcher);
         if (hitThing != null)
         {
