@@ -37,7 +37,7 @@ public static class ModLightningBoltMeshMaker
     {
         var num = (int)Math.Ceiling((Vector2.zero - lightningTop).magnitude / 0.25f);
         var b = lightningTop / num;
-        verts2D = new List<Vector2>();
+        verts2D = [];
         var vector = Vector2.zero;
         for (var i = 0; i < num; i++)
         {

@@ -1,5 +1,8 @@
 # Changelog for WeaponsOfElysion
 
+1.5.0 - Mod updated for 1.5 and passed autotests
+
+
 1.4.2 - More defined weapon graphics, thanks Zaljerem!
 
 
