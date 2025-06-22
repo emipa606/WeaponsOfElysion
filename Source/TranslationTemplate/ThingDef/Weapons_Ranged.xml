@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: exploding bullets -->
+  <Bullet_ExplodingBullet.label>exploding bullets</Bullet_ExplodingBullet.label>
+  <!-- EN: lightning bullets -->
+  <Bullet_LightningBullet.label>lightning bullets</Bullet_LightningBullet.label>
+  <!-- EN: high explosive combat rifle  -->
+  <Gun_HECombatRifle.label>high explosive combat rifle </Gun_HECombatRifle.label>
+  <!-- EN: a rifle that shoots exploding bullets. -->
+  <Gun_HECombatRifle.description>a rifle that shoots exploding bullets.</Gun_HECombatRifle.description>
+  <!-- EN: high explosive combat rifle  -->
+  <Gun_HECombatRifle.verbs.Verb_Shoot.label>high explosive combat rifle </Gun_HECombatRifle.verbs.Verb_Shoot.label>
+  <!-- EN: voltaic handcannon -->
+  <Gun_VoltaicHandCannon.label>voltaic handcannon</Gun_VoltaicHandCannon.label>
+  <!-- EN: a rifle that shoots lightning bolts. -->
+  <Gun_VoltaicHandCannon.description>a rifle that shoots lightning bolts.</Gun_VoltaicHandCannon.description>
+  <!-- EN: voltaic handcannon -->
+  <Gun_VoltaicHandCannon.verbs.Verb_Shoot.label>voltaic handcannon</Gun_VoltaicHandCannon.verbs.Verb_Shoot.label>
+</LanguageData>

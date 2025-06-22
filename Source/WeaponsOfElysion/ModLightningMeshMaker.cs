@@ -10,15 +10,7 @@ public static class ModLightningBoltMeshMaker
 {
     private const float LightningRootXVar = 0.2f;
 
-    private const float VertexInterval = 0.0f;
-
     private const float MeshWidth = 0.5f;
-
-    private const float UVIntervalY = 0.04f;
-
-    private const float PerturbAmp = 6f;
-
-    private const float PerturbFreq = 0.007f;
 
     private static List<Vector2> verts2D;
 
@@ -27,13 +19,13 @@ public static class ModLightningBoltMeshMaker
     public static Mesh NewBoltMesh(float distance)
     {
         lightningTop = new Vector2(Rand.Range(LightningRootXVar * -1, LightningRootXVar), distance);
-        MakeVerticesBase();
-        PeturbVerticesRandomly();
-        DoubleVertices();
-        return MeshFromVerts();
+        makeVerticesBase();
+        peturbVerticesRandomly();
+        doubleVertices();
+        return meshFromVerts();
     }
 
-    private static void MakeVerticesBase()
+    private static void makeVerticesBase()
     {
         var num = (int)Math.Ceiling((Vector2.zero - lightningTop).magnitude / 0.25f);
         var b = lightningTop / num;
@@ -46,9 +38,9 @@ public static class ModLightningBoltMeshMaker
         }
     }
 
-    private static void PeturbVerticesRandomly()
+    private static void peturbVerticesRandomly()
     {
-        var perlin = new Perlin(0.0070000002160668373, 2.0, 0.5, 6, Rand.Range(0, 2147483647), QualityMode.High);
+        var perlin = new Perlin(0.0070000002160668373, 2.0, MeshWidth, 6, Rand.Range(0, 2147483647), QualityMode.High);
         var list = verts2D.ListFullCopy();
         verts2D.Clear();
         for (var i = 0; i < list.Count; i++)
@@ -59,7 +51,7 @@ public static class ModLightningBoltMeshMaker
         }
     }
 
-    private static void DoubleVertices()
+    private static void doubleVertices()
     {
         var list = verts2D.ListFullCopy();
         var a = default(Vector2);
@@ -80,7 +72,7 @@ public static class ModLightningBoltMeshMaker
         }
     }
 
-    private static Mesh MeshFromVerts()
+    private static Mesh meshFromVerts()
     {
         var array = new Vector3[verts2D.Count];
         for (var i = 0; i < array.Length; i++)

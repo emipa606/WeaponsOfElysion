@@ -6,7 +6,7 @@ namespace WeaponsOfElysion;
 [StaticConstructorOnStartup]
 public class LightningBolt(IntVec3 hitThing, Vector3 origin) : Thing
 {
-    private static readonly Material LightningMat = MatLoader.LoadMat("Weather/LightningBolt");
+    private static readonly Material lightningMat = MatLoader.LoadMat("Weather/LightningBolt");
     private Mesh boltMesh;
     private Quaternion direction;
 
@@ -24,7 +24,7 @@ public class LightningBolt(IntVec3 hitThing, Vector3 origin) : Thing
             boltMesh,
             origin,
             direction,
-            LightningMat,
+            lightningMat,
             0);
     }
 }

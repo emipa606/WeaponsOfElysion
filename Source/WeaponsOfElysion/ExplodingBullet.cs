@@ -15,15 +15,14 @@ public class ExplodingBullet : Projectile
         {
             GenExplosion.DoExplosion(hitThing.Position, map, 0.2f, DamageDefOf.Bomb, null, damageAmountBase);
             var thingDef = equipmentDef;
-            var dinfo = new DamageInfo(def.projectile.damageDef, damageAmountBase, ExactRotation.eulerAngles.y, -1f,
-                launcher, null, thingDef);
-            hitThing.TakeDamage(dinfo);
+            hitThing.TakeDamage(new DamageInfo(def.projectile.damageDef, damageAmountBase, ExactRotation.eulerAngles.y,
+                -1f,
+                launcher, null, thingDef));
+            return;
         }
-        else
-        {
-            GenExplosion.DoExplosion(Position, map, 0.2f, DamageDefOf.Bomb, null, damageAmountBase);
-            SoundDefOf.BulletImpact_Ground.PlayOneShot(new TargetInfo(Position, map));
-            FleckMaker.Static(ExactPosition, map, FleckDefOf.ShotHit_Dirt);
-        }
+
+        GenExplosion.DoExplosion(Position, map, 0.2f, DamageDefOf.Bomb, null, damageAmountBase);
+        SoundDefOf.BulletImpact_Ground.PlayOneShot(new TargetInfo(Position, map));
+        FleckMaker.Static(ExactPosition, map, FleckDefOf.ShotHit_Dirt);
     }
 }
