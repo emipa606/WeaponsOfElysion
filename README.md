@@ -1,15 +1,15 @@
 # [Weapons Of Elysion (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2793869556)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://img.litet.net/logos/Info.png)
 
 Update of MercuryDoll and Yaluzans mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=859203658
 
 - Custom sound and bullet graphics added, thank you Zaljerem!
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://img.litet.net/logos/Notice.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://img.litet.net/logos/OriginalDescription.png)
 
 Weapons Of Elysion is a mod that started on the unofficial rimworld discord that Mercury started and was making art for. 
 I (Yaluzan) took this chance to start modding rimworld, this is the first rimworld mod i did XML and programming.
@@ -31,13 +31,13 @@ Programming: Yaluzan
 Rimworld Unofficial Discord(as linked on reddit): https://discordapp.com/invite/UTaMDWc
 You can come here for anything, asking questions, troubleshooting, just random talking and showing off your base. There is a seperate modding channel you can always hop into if you want to get into modding or just have questions about a certain mod(chances are high the creator is in the discord).
 
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://img.litet.net/logos/ReportingIssues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using [HugsLib](https://steamcommunity.com/workshop/filedetails/?id=818773962) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
@@ -45,4 +45,4 @@ You can come here for anything, asking questions, troubleshooting, just random t
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/WeaponsOfElysion?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2793869556) | tags:  yaluzan
+[![Image](https://img.shields.io/github/v/release/emipa606/WeaponsOfElysion?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2793869556) | yaluzan

@@ -10,10 +10,11 @@ public class LightningBullet : Projectile
     {
         var map = Map;
         base.Impact(hitThing, blockedByShield);
+        LightningBolt lightning;
         if (hitThing != null)
         {
             var damageAmountBase = def.projectile.GetDamageAmount(launcher);
-            var lightning = new LightningBolt(hitThing.Position, origin);
+            lightning = new LightningBolt(hitThing.Position, origin);
             lightning.CreateLightningBolt();
             var thingDef = equipmentDef;
             hitThing.TakeDamage(new DamageInfo(def.projectile.damageDef, damageAmountBase, ExactRotation.eulerAngles.y,
@@ -21,13 +22,12 @@ public class LightningBullet : Projectile
                 launcher, null, thingDef));
             hitThing.TakeDamage(new DamageInfo(DamageDefOf.EMP, 15, ExactRotation.eulerAngles.y, -1f, launcher, null,
                 thingDef));
+            return;
         }
-        else
-        {
-            var lightning = new LightningBolt(Position, origin);
-            lightning.CreateLightningBolt();
-            SoundDefOf.BulletImpact_Ground.PlayOneShot(new TargetInfo(Position, map));
-            FleckMaker.Static(ExactPosition, map, FleckDefOf.ShotHit_Dirt);
-        }
+
+        lightning = new LightningBolt(Position, origin);
+        lightning.CreateLightningBolt();
+        SoundDefOf.BulletImpact_Ground.PlayOneShot(new TargetInfo(Position, map));
+        FleckMaker.Static(ExactPosition, map, FleckDefOf.ShotHit_Dirt);
     }
 }
